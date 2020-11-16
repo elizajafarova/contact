@@ -1,0 +1,194 @@
+@import "variables";
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .head-div {
+      width: 100%;
+      height: 30px;
+      flex-direction: column;
+      background-color: rgb(199, 53, 53);
+      @include mobile {
+        padding: inherit;
+      }
+      ul {
+        display: flex;
+        margin-left: 85%;
+        @include mobile {
+          margin-left: auto;
+        }
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: black;
+            .fa {
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+    }
+    .body-div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        width: 50%;
+        margin-top: 1em;
+        margin-left: 6em;
+        @include mobile {
+          margin-left: auto;
+        }
+        img {
+          width: 30%;
+          height: 60px;
+          @include mobile {
+            width: 40%;
+            height: auto;
+            margin-left: 1em;
+          }
+        }
+      }
+      .nav {
+        width: 50%;
+        flex-direction: column;
+        margin-top: 2em;
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          list-style: none;
+          @include mobile {
+            width: 40%;
+            margin-top: -15px;
+          }
+          li {
+            @include mobile {
+              margin: 3px;
+              font-size: 14px;
+            }
+
+            a {
+              text-decoration: none;
+              color: rgb(141, 6, 6);
+              font-family: "Rubik", sans-serif;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    padding: 0;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    .middle {
+        margin: 0;
+      width: 100%;
+      height: 600px;
+      background: url(../img/blurred.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #000;
+
+      .row {
+        margin: 0;
+        .left {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: space-between;
+          text-align: center;
+
+          .text {
+            width: 70%;
+            margin-top: 6em;
+            margin-left: 4em;
+            color: white;
+            font-size: 27px;
+            @include mobile {
+              font-size: 22px;
+              margin-top: inherit;
+            }
+            h1 {
+              color: rgb(214, 21, 21);
+
+              @include mobile {
+                margin-right: 70px;
+              }
+            }
+            p {
+              margin-top: 2em;
+              @include mobile {
+                margin-right: 70px;
+              }
+            }
+          }
+        }
+        .right {
+          margin-top: 8em;
+          width: 70%;
+          font-size: 20px;
+
+          .col {
+            margin-top: 1em;
+            border-radius: inherit;
+          }
+
+          .btn {
+            width: 30%;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .row {
+      margin: 0;
+      .card-group {
+        width: 100%;
+        margin: 4em 6em;
+        @include mobile {
+          margin-top: 22em;
+        }
+
+        .card {
+          border: none;
+          .card-img-top {
+            width: 100%;
+            height: 70px;
+          }
+
+          .card-body {
+            text-align: center;
+            .card-title {
+              color: rgb(161, 14, 14);
+            }
+          }
+        }
+      }
+    }
+  }
+}

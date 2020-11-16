@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+
+body header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .head-div {
+  width: 100%;
+  height: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #c73535;
+}
+
+@media (max-width: 767px) {
+  body header .head-div {
+    padding: inherit;
+  }
+}
+
+body header .head-div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 85%;
+}
+
+@media (max-width: 767px) {
+  body header .head-div ul {
+    margin-left: auto;
+  }
+}
+
+body header .head-div ul li {
+  list-style: none;
+}
+
+body header .head-div ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body header .head-div ul li a .fa {
+  margin: 0 5px;
+}
+
+body header .body-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .body-div .logo {
+  width: 50%;
+  margin-top: 1em;
+  margin-left: 6em;
+}
+
+@media (max-width: 767px) {
+  body header .body-div .logo {
+    margin-left: auto;
+  }
+}
+
+body header .body-div .logo img {
+  width: 30%;
+  height: 60px;
+}
+
+@media (max-width: 767px) {
+  body header .body-div .logo img {
+    width: 40%;
+    height: auto;
+    margin-left: 1em;
+  }
+}
+
+body header .body-div .nav {
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2em;
+}
+
+body header .body-div .nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  body header .body-div .nav ul {
+    width: 40%;
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 767px) {
+  body header .body-div .nav ul li {
+    margin: 3px;
+    font-size: 14px;
+  }
+}
+
+body header .body-div .nav ul li a {
+  text-decoration: none;
+  color: #8d0606;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+
+body main {
+  width: 100%;
+  padding: 0;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .middle {
+  margin: 0;
+  width: 100%;
+  height: 600px;
+  background: url(../img/blurred.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+}
+
+body main .middle .row {
+  margin: 0;
+}
+
+body main .middle .row .left {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+body main .middle .row .left .text {
+  width: 70%;
+  margin-top: 6em;
+  margin-left: 4em;
+  color: white;
+  font-size: 27px;
+}
+
+@media (max-width: 767px) {
+  body main .middle .row .left .text {
+    font-size: 22px;
+    margin-top: inherit;
+  }
+}
+
+body main .middle .row .left .text h1 {
+  color: #d61515;
+}
+
+@media (max-width: 767px) {
+  body main .middle .row .left .text h1 {
+    margin-right: 70px;
+  }
+}
+
+body main .middle .row .left .text p {
+  margin-top: 2em;
+}
+
+@media (max-width: 767px) {
+  body main .middle .row .left .text p {
+    margin-right: 70px;
+  }
+}
+
+body main .middle .row .right {
+  margin-top: 8em;
+  width: 70%;
+  font-size: 20px;
+}
+
+body main .middle .row .right .col {
+  margin-top: 1em;
+  border-radius: inherit;
+}
+
+body main .middle .row .right .btn {
+  width: 30%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .row {
+  margin: 0;
+}
+
+body footer .row .card-group {
+  width: 100%;
+  margin: 4em 6em;
+}
+
+@media (max-width: 767px) {
+  body footer .row .card-group {
+    margin-top: 22em;
+  }
+}
+
+body footer .row .card-group .card {
+  border: none;
+}
+
+body footer .row .card-group .card .card-img-top {
+  width: 100%;
+  height: 70px;
+}
+
+body footer .row .card-group .card .card-body {
+  text-align: center;
+}
+
+body footer .row .card-group .card .card-body .card-title {
+  color: #a10e0e;
+}
+/*# sourceMappingURL=style.css.map */
